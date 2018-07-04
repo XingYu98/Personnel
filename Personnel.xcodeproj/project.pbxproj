@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F533312B20EC63400029093D /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312A20EC63400029093D /* SettingVC.m */; };
+		F533312E20EC6B540029093D /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312D20EC6B540029093D /* StartVC.m */; };
 		F5734C4D20EB0BF80042071F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C4C20EB0BF80042071F /* AppDelegate.m */; };
 		F5734C5020EB0BF80042071F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C4F20EB0BF80042071F /* ViewController.m */; };
 		F5734C5320EB0BF80042071F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5734C5120EB0BF80042071F /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		F5734C5B20EB0BF80042071F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C5A20EB0BF80042071F /* main.m */; };
 		F5734C6520EB0BF80042071F /* PersonnelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C6420EB0BF80042071F /* PersonnelTests.m */; };
 		F5734C7020EB0BF80042071F /* PersonnelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C6F20EB0BF80042071F /* PersonnelUITests.m */; };
+		F5734C9420EB84080042071F /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C9320EB84080042071F /* LoginVC.m */; };
+		F5734C9720EB85D70042071F /* FaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C9620EB85D70042071F /* FaceVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +38,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F583019620ECE6B0008603B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F533312920EC63400029093D /* SettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		F533312A20EC63400029093D /* SettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		F533312C20EC6B540029093D /* StartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartVC.h; sourceTree = "<group>"; };
+		F533312D20EC6B540029093D /* StartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartVC.m; sourceTree = "<group>"; };
 		F5734C4820EB0BF80042071F /* Personnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5734C4B20EB0BF80042071F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5734C4C20EB0BF80042071F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +72,10 @@
 		F5734C6B20EB0BF80042071F /* PersonnelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonnelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5734C6F20EB0BF80042071F /* PersonnelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonnelUITests.m; sourceTree = "<group>"; };
 		F5734C7120EB0BF80042071F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5734C9220EB84080042071F /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		F5734C9320EB84080042071F /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		F5734C9520EB85D70042071F /* FaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceVC.h; sourceTree = "<group>"; };
+		F5734C9620EB85D70042071F /* FaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +130,7 @@
 				F5734C4C20EB0BF80042071F /* AppDelegate.m */,
 				F5734C4E20EB0BF80042071F /* ViewController.h */,
 				F5734C4F20EB0BF80042071F /* ViewController.m */,
+				F5734C7D20EB83780042071F /* Classes */,
 				F5734C5120EB0BF80042071F /* Main.storyboard */,
 				F5734C5420EB0BF80042071F /* Assets.xcassets */,
 				F5734C5620EB0BF80042071F /* LaunchScreen.storyboard */,
@@ -132,6 +158,181 @@
 			path = PersonnelUITests;
 			sourceTree = "<group>";
 		};
+		F5734C7D20EB83780042071F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C7E20EB83780042071F /* Discover */,
+				F5734C8220EB83780042071F /* FaceView */,
+				F5734C8620EB83780042071F /* Setting */,
+				F5734C8A20EB83780042071F /* MainView */,
+				F5734C8E20EB83780042071F /* Login */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F5734C7E20EB83780042071F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C7F20EB83780042071F /* Controller */,
+				F5734C8020EB83780042071F /* Model */,
+				F5734C8120EB83780042071F /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		F5734C7F20EB83780042071F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5734C8020EB83780042071F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5734C8120EB83780042071F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5734C8220EB83780042071F /* FaceView */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C8320EB83780042071F /* Controller */,
+				F5734C8420EB83780042071F /* Model */,
+				F5734C8520EB83780042071F /* View */,
+			);
+			path = FaceView;
+			sourceTree = "<group>";
+		};
+		F5734C8320EB83780042071F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C9520EB85D70042071F /* FaceVC.h */,
+				F5734C9620EB85D70042071F /* FaceVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5734C8420EB83780042071F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5734C8520EB83780042071F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5734C8620EB83780042071F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C8720EB83780042071F /* Controller */,
+				F5734C8820EB83780042071F /* Model */,
+				F5734C8920EB83780042071F /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F5734C8720EB83780042071F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F533312920EC63400029093D /* SettingVC.h */,
+				F533312A20EC63400029093D /* SettingVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5734C8820EB83780042071F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5734C8920EB83780042071F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5734C8A20EB83780042071F /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C8B20EB83780042071F /* Controller */,
+				F5734C8C20EB83780042071F /* Model */,
+				F5734C8D20EB83780042071F /* View */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		F5734C8B20EB83780042071F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5734C8C20EB83780042071F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5734C8D20EB83780042071F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5734C8E20EB83780042071F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C8F20EB83780042071F /* Controller */,
+				F5734C9020EB83780042071F /* Model */,
+				F5734C9120EB83780042071F /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F5734C8F20EB83780042071F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5734C9220EB84080042071F /* LoginVC.h */,
+				F5734C9320EB84080042071F /* LoginVC.m */,
+				F533312C20EC6B540029093D /* StartVC.h */,
+				F533312D20EC6B540029093D /* StartVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5734C9020EB83780042071F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5734C9120EB83780042071F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +343,7 @@
 				F5734C4420EB0BF80042071F /* Sources */,
 				F5734C4520EB0BF80042071F /* Frameworks */,
 				F5734C4620EB0BF80042071F /* Resources */,
+				F583019620ECE6B0008603B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +401,7 @@
 				TargetAttributes = {
 					F5734C4720EB0BF80042071F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					F5734C5F20EB0BF80042071F = {
@@ -266,7 +469,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5734C5020EB0BF80042071F /* ViewController.m in Sources */,
+				F533312B20EC63400029093D /* SettingVC.m in Sources */,
 				F5734C5B20EB0BF80042071F /* main.m in Sources */,
+				F5734C9420EB84080042071F /* LoginVC.m in Sources */,
+				F5734C9720EB85D70042071F /* FaceVC.m in Sources */,
+				F533312E20EC6B540029093D /* StartVC.m in Sources */,
 				F5734C4D20EB0BF80042071F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,13 +636,18 @@
 		F5734C7520EB0BF80042071F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M22SAVL82P;
 				INFOPLIST_FILE = Personnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.Personnel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Personnel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,13 +655,17 @@
 		F5734C7620EB0BF80042071F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M22SAVL82P;
 				INFOPLIST_FILE = Personnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.Personnel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Personnel-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
