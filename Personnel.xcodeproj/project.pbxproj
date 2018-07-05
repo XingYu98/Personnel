@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F533312B20EC63400029093D /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312A20EC63400029093D /* SettingVC.m */; };
 		F533312E20EC6B540029093D /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312D20EC6B540029093D /* StartVC.m */; };
+		F537415820EDD15A0001B4C9 /* ChartsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537415720EDD15A0001B4C9 /* ChartsFile.swift */; };
 		F5734C4D20EB0BF80042071F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C4C20EB0BF80042071F /* AppDelegate.m */; };
 		F5734C5020EB0BF80042071F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C4F20EB0BF80042071F /* ViewController.m */; };
 		F5734C5320EB0BF80042071F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5734C5120EB0BF80042071F /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 		F5734C7020EB0BF80042071F /* PersonnelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C6F20EB0BF80042071F /* PersonnelUITests.m */; };
 		F5734C9420EB84080042071F /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C9320EB84080042071F /* LoginVC.m */; };
 		F5734C9720EB85D70042071F /* FaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C9620EB85D70042071F /* FaceVC.m */; };
+		F57626C820EDD7D900A47FCE /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F576266E20EDD27000A47FCE /* Charts.framework */; };
+		F57626C920EDD7D900A47FCE /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F576266E20EDD27000A47FCE /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,27 @@
 			remoteGlobalIDString = F5734C4720EB0BF80042071F;
 			remoteInfo = Personnel;
 		};
+		F576266D20EDD27000A47FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F576266820EDD27000A47FCE /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		F576266F20EDD27000A47FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F576266820EDD27000A47FCE /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		F57626CA20EDD7D900A47FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F576266820EDD27000A47FCE /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F57626C920EDD7D900A47FCE /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +81,7 @@
 		F533312A20EC63400029093D /* SettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		F533312C20EC6B540029093D /* StartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartVC.h; sourceTree = "<group>"; };
 		F533312D20EC6B540029093D /* StartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartVC.m; sourceTree = "<group>"; };
+		F537415720EDD15A0001B4C9 /* ChartsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsFile.swift; sourceTree = "<group>"; };
 		F5734C4820EB0BF80042071F /* Personnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5734C4B20EB0BF80042071F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5734C4C20EB0BF80042071F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +102,8 @@
 		F5734C9320EB84080042071F /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		F5734C9520EB85D70042071F /* FaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceVC.h; sourceTree = "<group>"; };
 		F5734C9620EB85D70042071F /* FaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceVC.m; sourceTree = "<group>"; };
+		F576266820EDD27000A47FCE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		F57626CC20EDD99B00A47FCE /* PersonnelCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonnelCharts.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57626C820EDD7D900A47FCE /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +135,8 @@
 		F5734C3F20EB0BF80042071F = {
 			isa = PBXGroup;
 			children = (
+				F57626CC20EDD99B00A47FCE /* PersonnelCharts.h */,
+				F537415720EDD15A0001B4C9 /* ChartsFile.swift */,
 				F5734C4A20EB0BF80042071F /* Personnel */,
 				F5734C6320EB0BF80042071F /* PersonnelTests */,
 				F5734C6E20EB0BF80042071F /* PersonnelUITests */,
@@ -126,6 +157,7 @@
 		F5734C4A20EB0BF80042071F /* Personnel */ = {
 			isa = PBXGroup;
 			children = (
+				F576266820EDD27000A47FCE /* Charts.xcodeproj */,
 				F5734C4B20EB0BF80042071F /* AppDelegate.h */,
 				F5734C4C20EB0BF80042071F /* AppDelegate.m */,
 				F5734C4E20EB0BF80042071F /* ViewController.h */,
@@ -333,6 +365,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F576266920EDD27000A47FCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F576266E20EDD27000A47FCE /* Charts.framework */,
+				F576267020EDD27000A47FCE /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +389,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F57626CB20EDD7D900A47FCE /* PBXTargetDependency */,
 			);
 			name = Personnel;
 			productName = Personnel;
@@ -427,6 +469,12 @@
 			mainGroup = F5734C3F20EB0BF80042071F;
 			productRefGroup = F5734C4920EB0BF80042071F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F576266920EDD27000A47FCE /* Products */;
+					ProjectRef = F576266820EDD27000A47FCE /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F5734C4720EB0BF80042071F /* Personnel */,
@@ -435,6 +483,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F576266E20EDD27000A47FCE /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = F576266D20EDD27000A47FCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F576267020EDD27000A47FCE /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = F576266F20EDD27000A47FCE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F5734C4620EB0BF80042071F /* Resources */ = {
@@ -468,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F537415820EDD15A0001B4C9 /* ChartsFile.swift in Sources */,
 				F5734C5020EB0BF80042071F /* ViewController.m in Sources */,
 				F533312B20EC63400029093D /* SettingVC.m in Sources */,
 				F5734C5B20EB0BF80042071F /* main.m in Sources */,
@@ -506,6 +572,11 @@
 			isa = PBXTargetDependency;
 			target = F5734C4720EB0BF80042071F /* Personnel */;
 			targetProxy = F5734C6C20EB0BF80042071F /* PBXContainerItemProxy */;
+		};
+		F57626CB20EDD7D900A47FCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = F57626CA20EDD7D900A47FCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -640,12 +711,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M22SAVL82P;
 				INFOPLIST_FILE = Personnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.Personnel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Personnel-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = PersonnelCharts.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = PersonnelCharts.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -659,12 +732,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M22SAVL82P;
 				INFOPLIST_FILE = Personnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.Personnel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Personnel-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = PersonnelCharts.h;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = PersonnelCharts.h;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -673,6 +748,7 @@
 		F5734C7820EB0BF80042071F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M22SAVL82P;
@@ -688,6 +764,7 @@
 		F5734C7920EB0BF80042071F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M22SAVL82P;
@@ -703,6 +780,7 @@
 		F5734C7B20EB0BF80042071F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M22SAVL82P;
 				INFOPLIST_FILE = PersonnelUITests/Info.plist;
@@ -717,6 +795,7 @@
 		F5734C7C20EB0BF80042071F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M22SAVL82P;
 				INFOPLIST_FILE = PersonnelUITests/Info.plist;
