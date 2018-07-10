@@ -10,6 +10,9 @@
 		F533312B20EC63400029093D /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312A20EC63400029093D /* SettingVC.m */; };
 		F533312E20EC6B540029093D /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312D20EC6B540029093D /* StartVC.m */; };
 		F537415820EDD15A0001B4C9 /* ChartsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537415720EDD15A0001B4C9 /* ChartsFile.swift */; };
+		F568E90320F49E170018A17C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E8FE20F49E170018A17C /* MBProgressHUD.m */; };
+		F568E90420F49E170018A17C /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E8FF20F49E170018A17C /* MBProgressHUD+XMG.m */; };
+		F568E90520F49E170018A17C /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F568E90220F49E170018A17C /* MBProgressHUD.bundle */; };
 		F5734C4D20EB0BF80042071F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C4C20EB0BF80042071F /* AppDelegate.m */; };
 		F5734C5020EB0BF80042071F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C4F20EB0BF80042071F /* ViewController.m */; };
 		F5734C5320EB0BF80042071F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5734C5120EB0BF80042071F /* Main.storyboard */; };
@@ -82,6 +85,11 @@
 		F533312C20EC6B540029093D /* StartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartVC.h; sourceTree = "<group>"; };
 		F533312D20EC6B540029093D /* StartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartVC.m; sourceTree = "<group>"; };
 		F537415720EDD15A0001B4C9 /* ChartsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsFile.swift; sourceTree = "<group>"; };
+		F568E8FE20F49E170018A17C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F568E8FF20F49E170018A17C /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		F568E90020F49E170018A17C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F568E90120F49E170018A17C /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		F568E90220F49E170018A17C /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		F5734C4820EB0BF80042071F /* Personnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5734C4B20EB0BF80042071F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5734C4C20EB0BF80042071F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +140,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F568E8FD20F49E170018A17C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F568E8FE20F49E170018A17C /* MBProgressHUD.m */,
+				F568E8FF20F49E170018A17C /* MBProgressHUD+XMG.m */,
+				F568E90020F49E170018A17C /* MBProgressHUD.h */,
+				F568E90120F49E170018A17C /* MBProgressHUD+XMG.h */,
+				F568E90220F49E170018A17C /* MBProgressHUD.bundle */,
+			);
+			name = MBProgressHUD;
+			path = ../../../Downloads/MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		F5734C3F20EB0BF80042071F = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +178,7 @@
 		F5734C4A20EB0BF80042071F /* Personnel */ = {
 			isa = PBXGroup;
 			children = (
+				F568E8FD20F49E170018A17C /* MBProgressHUD */,
 				F576266820EDD27000A47FCE /* Charts.xcodeproj */,
 				F5734C4B20EB0BF80042071F /* AppDelegate.h */,
 				F5734C4C20EB0BF80042071F /* AppDelegate.m */,
@@ -193,23 +215,23 @@
 		F5734C7D20EB83780042071F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F5734C7E20EB83780042071F /* Discover */,
-				F5734C8220EB83780042071F /* FaceView */,
-				F5734C8620EB83780042071F /* Setting */,
-				F5734C8A20EB83780042071F /* MainView */,
-				F5734C8E20EB83780042071F /* Login */,
+				F5734C7E20EB83780042071F /* Discover（发现） */,
+				F5734C8220EB83780042071F /* FaceView（界面） */,
+				F5734C8620EB83780042071F /* Setting（设置） */,
+				F5734C8A20EB83780042071F /* MainView（主页） */,
+				F5734C8E20EB83780042071F /* Login（登陆） */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		F5734C7E20EB83780042071F /* Discover */ = {
+		F5734C7E20EB83780042071F /* Discover（发现） */ = {
 			isa = PBXGroup;
 			children = (
 				F5734C7F20EB83780042071F /* Controller */,
 				F5734C8020EB83780042071F /* Model */,
 				F5734C8120EB83780042071F /* View */,
 			);
-			path = Discover;
+			path = "Discover（发现）";
 			sourceTree = "<group>";
 		};
 		F5734C7F20EB83780042071F /* Controller */ = {
@@ -233,14 +255,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F5734C8220EB83780042071F /* FaceView */ = {
+		F5734C8220EB83780042071F /* FaceView（界面） */ = {
 			isa = PBXGroup;
 			children = (
 				F5734C8320EB83780042071F /* Controller */,
 				F5734C8420EB83780042071F /* Model */,
 				F5734C8520EB83780042071F /* View */,
 			);
-			path = FaceView;
+			path = "FaceView（界面）";
 			sourceTree = "<group>";
 		};
 		F5734C8320EB83780042071F /* Controller */ = {
@@ -266,14 +288,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F5734C8620EB83780042071F /* Setting */ = {
+		F5734C8620EB83780042071F /* Setting（设置） */ = {
 			isa = PBXGroup;
 			children = (
 				F5734C8720EB83780042071F /* Controller */,
 				F5734C8820EB83780042071F /* Model */,
 				F5734C8920EB83780042071F /* View */,
 			);
-			path = Setting;
+			path = "Setting（设置）";
 			sourceTree = "<group>";
 		};
 		F5734C8720EB83780042071F /* Controller */ = {
@@ -299,14 +321,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F5734C8A20EB83780042071F /* MainView */ = {
+		F5734C8A20EB83780042071F /* MainView（主页） */ = {
 			isa = PBXGroup;
 			children = (
 				F5734C8B20EB83780042071F /* Controller */,
 				F5734C8C20EB83780042071F /* Model */,
 				F5734C8D20EB83780042071F /* View */,
 			);
-			path = MainView;
+			path = "MainView（主页）";
 			sourceTree = "<group>";
 		};
 		F5734C8B20EB83780042071F /* Controller */ = {
@@ -330,14 +352,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F5734C8E20EB83780042071F /* Login */ = {
+		F5734C8E20EB83780042071F /* Login（登陆） */ = {
 			isa = PBXGroup;
 			children = (
 				F5734C8F20EB83780042071F /* Controller */,
 				F5734C9020EB83780042071F /* Model */,
 				F5734C9120EB83780042071F /* View */,
 			);
-			path = Login;
+			path = "Login（登陆）";
 			sourceTree = "<group>";
 		};
 		F5734C8F20EB83780042071F /* Controller */ = {
@@ -438,7 +460,7 @@
 		F5734C4020EB0BF80042071F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "罗星宇";
 				TargetAttributes = {
 					F5734C4720EB0BF80042071F = {
@@ -507,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5734C5820EB0BF80042071F /* LaunchScreen.storyboard in Resources */,
+				F568E90520F49E170018A17C /* MBProgressHUD.bundle in Resources */,
 				F5734C5520EB0BF80042071F /* Assets.xcassets in Resources */,
 				F5734C5320EB0BF80042071F /* Main.storyboard in Resources */,
 			);
@@ -537,6 +560,8 @@
 				F5734C5020EB0BF80042071F /* ViewController.m in Sources */,
 				F533312B20EC63400029093D /* SettingVC.m in Sources */,
 				F5734C5B20EB0BF80042071F /* main.m in Sources */,
+				F568E90420F49E170018A17C /* MBProgressHUD+XMG.m in Sources */,
+				F568E90320F49E170018A17C /* MBProgressHUD.m in Sources */,
 				F5734C9420EB84080042071F /* LoginVC.m in Sources */,
 				F5734C9720EB85D70042071F /* FaceVC.m in Sources */,
 				F533312E20EC6B540029093D /* StartVC.m in Sources */,
@@ -614,6 +639,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -621,6 +647,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -669,6 +696,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -676,6 +704,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -700,6 +729,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

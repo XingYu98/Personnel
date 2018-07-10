@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "PersonnelCharts.h"
 
+
 @interface ViewController ()
 
 @end
@@ -19,8 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    BarChartView *chatView = [[BarChartView alloc] initWithFrame:CGRectMake(5, 5, [UIScreen mainScreen].bounds.size.width - 10, [UIScreen mainScreen].bounds.size.height - 10)];
-    [self.view addSubview:chatView];
+    
     
     
 }
