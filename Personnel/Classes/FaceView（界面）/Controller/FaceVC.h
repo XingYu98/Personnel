@@ -10,4 +10,5 @@
 
 @interface FaceVC : UITabBarController
 
+@property (nonatomic, strong) NSString *username;
 @end

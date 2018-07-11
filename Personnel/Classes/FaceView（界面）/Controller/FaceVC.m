@@ -16,11 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    // Do any additional setup after loading the view.
     
     //设置导航条显示，animate：YES（有动画效果）：NO（没有动画效果，直接显示）
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    // Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

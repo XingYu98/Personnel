@@ -29,7 +29,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="22M-82-yV7">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="22M-82-yV7">
                                 <rect key="frame" x="131" y="403" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -50,7 +50,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Qm-bW-C7e">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Qm-bW-C7e">
                                 <rect key="frame" x="131" y="469" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="-5654" y="-1490"/>
         </scene>
-        <!--Item 2-->
+        <!--发现-->
         <scene sceneID="8yv-9W-WjI">
             <objects>
                 <viewController id="9hv-hB-1fI" sceneMemberID="viewController">
@@ -107,14 +107,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="B96-JX-17s"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4d4-lz-iBy"/>
+                    <tabBarItem key="tabBarItem" title="发现" id="4d4-lz-iBy"/>
                     <navigationItem key="navigationItem" id="2wm-oU-F3n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNj-Z5-Tmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3855" y="-1320"/>
         </scene>
-        <!--Item-->
+        <!--系统-->
         <scene sceneID="3LD-UU-Nvq">
             <objects>
                 <viewController id="Rif-59-dyg" customClass="SettingVC" sceneMemberID="viewController">
@@ -137,24 +137,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7TW-Yl-CQl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="L6K-jg-cWj"/>
+                    <tabBarItem key="tabBarItem" title="系统" id="L6K-jg-cWj"/>
                     <navigationItem key="navigationItem" id="5zQ-ln-cR6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVS-bI-Wcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4906.3999999999996" y="-629.2353823088456"/>
         </scene>
-        <!--Item 1-->
+        <!--首页-->
         <scene sceneID="cw9-KE-oLt">
             <objects>
-                <viewController id="Jfx-3S-nOi" sceneMemberID="viewController">
+                <viewController id="Jfx-3S-nOi" customClass="MainVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8aH-AR-RAV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aF4-4y-gZx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="kGt-Ih-o1h"/>
+                    <tabBarItem key="tabBarItem" title="首页" id="kGt-Ih-o1h"/>
                     <navigationItem key="navigationItem" id="bMZ-yA-oCT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXa-6G-pR8" userLabel="First Responder" sceneMemberID="firstResponder"/>

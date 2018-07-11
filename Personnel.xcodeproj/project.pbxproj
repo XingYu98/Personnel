@@ -13,6 +13,8 @@
 		F568E90320F49E170018A17C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E8FE20F49E170018A17C /* MBProgressHUD.m */; };
 		F568E90420F49E170018A17C /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E8FF20F49E170018A17C /* MBProgressHUD+XMG.m */; };
 		F568E90520F49E170018A17C /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F568E90220F49E170018A17C /* MBProgressHUD.bundle */; };
+		F568E91120F4EADE0018A17C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E91020F4EADE0018A17C /* MainVC.m */; };
+		F568E91320F4EFB30018A17C /* personNum.xib in Resources */ = {isa = PBXBuildFile; fileRef = F568E91220F4EFB30018A17C /* personNum.xib */; };
 		F5734C4D20EB0BF80042071F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C4C20EB0BF80042071F /* AppDelegate.m */; };
 		F5734C5020EB0BF80042071F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C4F20EB0BF80042071F /* ViewController.m */; };
 		F5734C5320EB0BF80042071F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5734C5120EB0BF80042071F /* Main.storyboard */; };
@@ -25,6 +27,10 @@
 		F5734C9720EB85D70042071F /* FaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5734C9620EB85D70042071F /* FaceVC.m */; };
 		F57626C820EDD7D900A47FCE /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F576266E20EDD27000A47FCE /* Charts.framework */; };
 		F57626C920EDD7D900A47FCE /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F576266E20EDD27000A47FCE /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5D5A52120F5E17200491370 /* personNum.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A52020F5E17200491370 /* personNum.m */; };
+		F5D5A52520F5E96B00491370 /* personImgNum.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A52420F5E96B00491370 /* personImgNum.m */; };
+		F5D5A52720F5EBDC00491370 /* personImg.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5D5A52620F5EBDC00491370 /* personImg.xib */; };
+		F5D5A53220F6331700491370 /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A53120F6331700491370 /* UIColor+ColorChange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,9 @@
 		F568E90020F49E170018A17C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F568E90120F49E170018A17C /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
 		F568E90220F49E170018A17C /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F568E90F20F4EADE0018A17C /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		F568E91020F4EADE0018A17C /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		F568E91220F4EFB30018A17C /* personNum.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = personNum.xib; sourceTree = "<group>"; };
 		F5734C4820EB0BF80042071F /* Personnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5734C4B20EB0BF80042071F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5734C4C20EB0BF80042071F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +121,13 @@
 		F5734C9620EB85D70042071F /* FaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceVC.m; sourceTree = "<group>"; };
 		F576266820EDD27000A47FCE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		F57626CC20EDD99B00A47FCE /* PersonnelCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonnelCharts.h; sourceTree = "<group>"; };
+		F5D5A51F20F5E17200491370 /* personNum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = personNum.h; sourceTree = "<group>"; };
+		F5D5A52020F5E17200491370 /* personNum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = personNum.m; sourceTree = "<group>"; };
+		F5D5A52320F5E96B00491370 /* personImgNum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = personImgNum.h; sourceTree = "<group>"; };
+		F5D5A52420F5E96B00491370 /* personImgNum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = personImgNum.m; sourceTree = "<group>"; };
+		F5D5A52620F5EBDC00491370 /* personImg.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = personImg.xib; sourceTree = "<group>"; };
+		F5D5A53020F6331700491370 /* UIColor+ColorChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorChange.h"; sourceTree = "<group>"; };
+		F5D5A53120F6331700491370 /* UIColor+ColorChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorChange.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +194,7 @@
 		F5734C4A20EB0BF80042071F /* Personnel */ = {
 			isa = PBXGroup;
 			children = (
+				F5D5A52F20F632D300491370 /* Support File */,
 				F568E8FD20F49E170018A17C /* MBProgressHUD */,
 				F576266820EDD27000A47FCE /* Charts.xcodeproj */,
 				F5734C4B20EB0BF80042071F /* AppDelegate.h */,
@@ -334,6 +351,8 @@
 		F5734C8B20EB83780042071F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F568E90F20F4EADE0018A17C /* MainVC.h */,
+				F568E91020F4EADE0018A17C /* MainVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,6 +367,12 @@
 		F5734C8D20EB83780042071F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F568E91220F4EFB30018A17C /* personNum.xib */,
+				F5D5A52620F5EBDC00491370 /* personImg.xib */,
+				F5D5A51F20F5E17200491370 /* personNum.h */,
+				F5D5A52020F5E17200491370 /* personNum.m */,
+				F5D5A52320F5E96B00491370 /* personImgNum.h */,
+				F5D5A52420F5E96B00491370 /* personImgNum.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -394,6 +419,15 @@
 				F576267020EDD27000A47FCE /* ChartsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D5A52F20F632D300491370 /* Support File */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5A53020F6331700491370 /* UIColor+ColorChange.h */,
+				F5D5A53120F6331700491370 /* UIColor+ColorChange.m */,
+			);
+			path = "Support File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,6 +565,8 @@
 				F5734C5820EB0BF80042071F /* LaunchScreen.storyboard in Resources */,
 				F568E90520F49E170018A17C /* MBProgressHUD.bundle in Resources */,
 				F5734C5520EB0BF80042071F /* Assets.xcassets in Resources */,
+				F568E91320F4EFB30018A17C /* personNum.xib in Resources */,
+				F5D5A52720F5EBDC00491370 /* personImg.xib in Resources */,
 				F5734C5320EB0BF80042071F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,12 +594,16 @@
 			files = (
 				F537415820EDD15A0001B4C9 /* ChartsFile.swift in Sources */,
 				F5734C5020EB0BF80042071F /* ViewController.m in Sources */,
+				F5D5A52520F5E96B00491370 /* personImgNum.m in Sources */,
+				F568E91120F4EADE0018A17C /* MainVC.m in Sources */,
 				F533312B20EC63400029093D /* SettingVC.m in Sources */,
+				F5D5A53220F6331700491370 /* UIColor+ColorChange.m in Sources */,
 				F5734C5B20EB0BF80042071F /* main.m in Sources */,
 				F568E90420F49E170018A17C /* MBProgressHUD+XMG.m in Sources */,
 				F568E90320F49E170018A17C /* MBProgressHUD.m in Sources */,
 				F5734C9420EB84080042071F /* LoginVC.m in Sources */,
 				F5734C9720EB85D70042071F /* FaceVC.m in Sources */,
+				F5D5A52120F5E17200491370 /* personNum.m in Sources */,
 				F533312E20EC6B540029093D /* StartVC.m in Sources */,
 				F5734C4D20EB0BF80042071F /* AppDelegate.m in Sources */,
 			);

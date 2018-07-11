@@ -7,6 +7,7 @@
 //
 
 #import "LoginVC.h"
+#import "FaceVC.h"
 #import "MBProgressHUD+XMG.h"
 
 @interface LoginVC ()
@@ -66,13 +67,18 @@
     }
 }
 
+#pragma segue传值代码
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    FaceVC *faceVc = segue.destinationViewController;
+    faceVc.username = self.usernameField.text;
+}
 #pragma 请求方式
 -(void)fakeAsyncWithUsername: (NSString *)username andPassword: (NSString *)password {
     if ([username isEqual:@"123"] && [password isEqual:@"123"]) {
         //可以通过请求获得Dictionary, 先假设收到的Dictionary
         NSDictionary *dict = @{
                                @"status":@"success",
-                               @"token":@"skghYrfyifUYDOUcuodyitYIfd",
+                               @"token":@"tokentokentokenQQQ",
                                @"request":@[
                                        @{
                                            @"总人数":@"678",
