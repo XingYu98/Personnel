@@ -10,6 +10,7 @@
 		F533312B20EC63400029093D /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312A20EC63400029093D /* SettingVC.m */; };
 		F533312E20EC6B540029093D /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312D20EC6B540029093D /* StartVC.m */; };
 		F537415820EDD15A0001B4C9 /* ChartsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537415720EDD15A0001B4C9 /* ChartsFile.swift */; };
+		F55F1A4920F8BC0E005064AE /* BaseViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F1A4620F8BC0C005064AE /* BaseViewControler.m */; };
 		F568E90320F49E170018A17C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E8FE20F49E170018A17C /* MBProgressHUD.m */; };
 		F568E90420F49E170018A17C /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = F568E8FF20F49E170018A17C /* MBProgressHUD+XMG.m */; };
 		F568E90520F49E170018A17C /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F568E90220F49E170018A17C /* MBProgressHUD.bundle */; };
@@ -91,6 +92,8 @@
 		F533312C20EC6B540029093D /* StartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartVC.h; sourceTree = "<group>"; };
 		F533312D20EC6B540029093D /* StartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartVC.m; sourceTree = "<group>"; };
 		F537415720EDD15A0001B4C9 /* ChartsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsFile.swift; sourceTree = "<group>"; };
+		F55F1A4620F8BC0C005064AE /* BaseViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewControler.m; sourceTree = "<group>"; };
+		F55F1A4820F8BC0D005064AE /* BaseViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewControler.h; sourceTree = "<group>"; };
 		F568E8FE20F49E170018A17C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F568E8FF20F49E170018A17C /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
 		F568E90020F49E170018A17C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -426,6 +429,8 @@
 			children = (
 				F5D5A53020F6331700491370 /* UIColor+ColorChange.h */,
 				F5D5A53120F6331700491370 /* UIColor+ColorChange.m */,
+				F55F1A4820F8BC0D005064AE /* BaseViewControler.h */,
+				F55F1A4620F8BC0C005064AE /* BaseViewControler.m */,
 			);
 			path = "Support File";
 			sourceTree = "<group>";
@@ -603,6 +608,7 @@
 				F568E90320F49E170018A17C /* MBProgressHUD.m in Sources */,
 				F5734C9420EB84080042071F /* LoginVC.m in Sources */,
 				F5734C9720EB85D70042071F /* FaceVC.m in Sources */,
+				F55F1A4920F8BC0E005064AE /* BaseViewControler.m in Sources */,
 				F5D5A52120F5E17200491370 /* personNum.m in Sources */,
 				F533312E20EC6B540029093D /* StartVC.m in Sources */,
 				F5734C4D20EB0BF80042071F /* AppDelegate.m in Sources */,

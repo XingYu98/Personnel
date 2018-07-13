@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewControler.h"
 
 @interface MainVC : UIViewController
 
 @property (nonatomic, assign) NSInteger Flag;
 
+@property (nonatomic, assign) BOOL shouldHideData;
 @end

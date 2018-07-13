@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UINavigationItem *NavigationBar;
 @property (nonatomic, strong) NSString *loginStatus;
+@property (nonatomic, strong) NSString *token;
 
 
 @end
@@ -36,7 +37,9 @@
     //及时监听文本框输入
     [_usernameField addTarget:self action:@selector(usernameFieldTextChange) forControlEvents:UIControlEventEditingChanged];
     [_passwordField addTarget:self action:@selector(passwordFieldTextChange) forControlEvents:UIControlEventEditingChanged];
-
+    
+    //加载logo动画
+    [self loadLogoView];
 }
 
 - (IBAction)loginAction:(id)sender {
@@ -67,11 +70,6 @@
     }
 }
 
-#pragma segue传值代码
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    FaceVC *faceVc = segue.destinationViewController;
-    faceVc.username = self.usernameField.text;
-}
 #pragma 请求方式
 -(void)fakeAsyncWithUsername: (NSString *)username andPassword: (NSString *)password {
     if ([username isEqual:@"123"] && [password isEqual:@"123"]) {
@@ -114,6 +112,7 @@
                                };
         
         self.loginStatus = dict[@"status"];
+        self.token = dict[@"token"];
     }else {
         self.loginStatus = @"error";
     }
@@ -154,6 +153,7 @@
         }
     }];
 //    self.loginStatus = dict[@"status"];
+//    self.token = dict[@"token"];
 }
 
 #pragma 监听文本框的action
@@ -175,6 +175,12 @@
     NSLog(@"%@",_passwordField.text);
 }
 
+#pragma segue传值代码
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    FaceVC *faceVc = segue.destinationViewController;
+    faceVc.username = self.usernameField.text;
+    faceVc.token = self.token;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -184,9 +190,27 @@
     NSLog(@"success");
 }
 
+
+//*****************************动画*****************************//
 #pragma 导航条的动态效果
 -(void)viewDidAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:NO];
+
+}
+#pragma logo动画
+-(void)loadLogoView {
+    //logo动画
+    UIImageView *logoV = [[UIImageView alloc] initWithFrame:CGRectMake(1, 1, 360, 350)];
+    logoV.image = [UIImage imageNamed:@"logo"];
+    logoV.alpha = 0.f;
+    
+    [UIView transitionWithView:logoV duration:1.0f options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+        logoV.frame = CGRectMake(76, 75, 222, 209);
+        logoV.alpha = 1.f;
+    } completion:^(BOOL finished) {
+        
+    }];
+    [self.view addSubview:logoV];
 }
 
 @end
