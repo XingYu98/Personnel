@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52CE21F20F9D52B0080ED02 /* discoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CE21E20F9D52B0080ED02 /* discoverVC.m */; };
+		F52CE22320F9E8540080ED02 /* sanjiInqVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CE22220F9E8540080ED02 /* sanjiInqVC.m */; };
+		F52CE22620F9FE0A0080ED02 /* chartInqVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CE22520F9FE0A0080ED02 /* chartInqVC.m */; };
 		F533312B20EC63400029093D /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312A20EC63400029093D /* SettingVC.m */; };
 		F533312E20EC6B540029093D /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533312D20EC6B540029093D /* StartVC.m */; };
 		F537415820EDD15A0001B4C9 /* ChartsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F537415720EDD15A0001B4C9 /* ChartsFile.swift */; };
@@ -87,6 +90,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F52CE21D20F9D52B0080ED02 /* discoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = discoverVC.h; sourceTree = "<group>"; };
+		F52CE21E20F9D52B0080ED02 /* discoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = discoverVC.m; sourceTree = "<group>"; };
+		F52CE22120F9E8540080ED02 /* sanjiInqVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sanjiInqVC.h; sourceTree = "<group>"; };
+		F52CE22220F9E8540080ED02 /* sanjiInqVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sanjiInqVC.m; sourceTree = "<group>"; };
+		F52CE22420F9FE0A0080ED02 /* chartInqVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chartInqVC.h; sourceTree = "<group>"; };
+		F52CE22520F9FE0A0080ED02 /* chartInqVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chartInqVC.m; sourceTree = "<group>"; };
 		F533312920EC63400029093D /* SettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		F533312A20EC63400029093D /* SettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		F533312C20EC6B540029093D /* StartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartVC.h; sourceTree = "<group>"; };
@@ -257,6 +266,12 @@
 		F5734C7F20EB83780042071F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F52CE21D20F9D52B0080ED02 /* discoverVC.h */,
+				F52CE21E20F9D52B0080ED02 /* discoverVC.m */,
+				F52CE22120F9E8540080ED02 /* sanjiInqVC.h */,
+				F52CE22220F9E8540080ED02 /* sanjiInqVC.m */,
+				F52CE22420F9FE0A0080ED02 /* chartInqVC.h */,
+				F52CE22520F9FE0A0080ED02 /* chartInqVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -599,12 +614,14 @@
 			files = (
 				F537415820EDD15A0001B4C9 /* ChartsFile.swift in Sources */,
 				F5734C5020EB0BF80042071F /* ViewController.m in Sources */,
+				F52CE22620F9FE0A0080ED02 /* chartInqVC.m in Sources */,
 				F5D5A52520F5E96B00491370 /* personImgNum.m in Sources */,
 				F568E91120F4EADE0018A17C /* MainVC.m in Sources */,
 				F533312B20EC63400029093D /* SettingVC.m in Sources */,
 				F5D5A53220F6331700491370 /* UIColor+ColorChange.m in Sources */,
 				F5734C5B20EB0BF80042071F /* main.m in Sources */,
 				F568E90420F49E170018A17C /* MBProgressHUD+XMG.m in Sources */,
+				F52CE22320F9E8540080ED02 /* sanjiInqVC.m in Sources */,
 				F568E90320F49E170018A17C /* MBProgressHUD.m in Sources */,
 				F5734C9420EB84080042071F /* LoginVC.m in Sources */,
 				F5734C9720EB85D70042071F /* FaceVC.m in Sources */,
@@ -612,6 +629,7 @@
 				F5D5A52120F5E17200491370 /* personNum.m in Sources */,
 				F533312E20EC6B540029093D /* StartVC.m in Sources */,
 				F5734C4D20EB0BF80042071F /* AppDelegate.m in Sources */,
+				F52CE21F20F9D52B0080ED02 /* discoverVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

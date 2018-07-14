@@ -32,7 +32,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 62, 20)];
+    titleLabel.text = @"首页";
+    self.navigationItem.titleView = titleLabel;
     
+    [self.navigationController setTitle: @"shut"];
     //****发送首页的请求
     
     //获取FaceVC的token值
