@@ -22,8 +22,8 @@
                                 <rect key="frame" x="76" y="75" width="222" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personnel Conmunication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flw-U6-r4v">
-                                <rect key="frame" x="9" y="319" width="357" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personnel Management" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flw-U6-r4v">
+                                <rect key="frame" x="9" y="307" width="357" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5654" y="-1490"/>
+            <point key="canvasLocation" x="-5655.1999999999998" y="-1490.1049475262371"/>
         </scene>
         <!--发现-->
         <scene sceneID="8yv-9W-WjI">
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNj-Z5-Tmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3855" y="-1320"/>
+            <point key="canvasLocation" x="-3855" y="-1490"/>
         </scene>
         <!--系统-->
         <scene sceneID="3LD-UU-Nvq">
@@ -151,6 +151,12 @@
                     <view key="view" contentMode="scaleToFill" id="8aH-AR-RAV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8dD-kw-6gi">
+                                <rect key="frame" x="16" y="23" width="343" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aF4-4y-gZx"/>
                     </view>
@@ -159,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXa-6G-pR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3855" y="-2247"/>
+            <point key="canvasLocation" x="-3855.1999999999998" y="-2247.5262368815593"/>
         </scene>
         <!--FaceVC-->
         <scene sceneID="GhQ-sZ-kAl">
@@ -201,6 +207,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MainLogo" width="253" height="146"/>
         <image name="whiteBcak" width="122" height="108"/>
         <image name="屏幕快照 2018-07-03 下午4.56.45" width="252" height="86"/>
     </resources>

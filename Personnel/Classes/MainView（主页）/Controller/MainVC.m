@@ -40,16 +40,10 @@
     //定义首页信息
     NSString *condition = @"首页";
     [self fakeRequestChartsDataWithCondition:condition andToken:token];
-    if ([self.dataDict[@"status"]  isEqual: @"success"]) {
-        NSLog(@"----%s----success", __func__);
-    }else if ([self.dataDict[@"status"]  isEqual: @"error"]) {
-        NSLog(@"----%s----error", __func__);
-    }
-
-    NSLog(@"===%.0f+++", [self.dataDict[@"request"][1][@"sumCount-1"] doubleValue]);
 
     [self drawLineChart];
     [self updateChartData];
+//    [self loadMainLogo];
     [self.view addSubview:_chartView];
 }
 
@@ -58,6 +52,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma 加载MainLogo
+-(void)loadMainLogo {
+    UIImageView *mainLogo = [[UIImageView alloc] init];
+    mainLogo.image = [UIImage imageNamed:@"MainLogo"];
+    mainLogo.alpha = 0.f;
+    
+    [UIView transitionWithView:mainLogo duration:1.0f options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+        mainLogo.frame = CGRectMake(20, 20, 222, 209);
+        mainLogo.alpha = 1.f;
+    } completion:^(BOOL finished) {
+        
+    }];
+    [self.view addSubview:mainLogo];
+}
 
 #pragma 加载四种人数框
 -(void)loadPersonField {
@@ -180,9 +188,9 @@
     
     ChartYAxis *leftAxis = _chartView.leftAxis;
     [leftAxis removeAllLimitLines];
-    [leftAxis addLimitLine:ll1];
-    [leftAxis addLimitLine:ll2];
-    leftAxis.axisMaximum = 700.0;
+//    [leftAxis addLimitLine:ll1];
+//    [leftAxis addLimitLine:ll2];
+    leftAxis.axisMaximum = 1000.0;
     leftAxis.axisMinimum = 0.0;
     leftAxis.gridLineDashLengths = @[@10.f, @5.f];
     leftAxis.drawZeroLineEnabled = NO;
@@ -204,7 +212,7 @@
 //    _chartView.marker = marker;
     
     _chartView.legend.form = ChartLegendFormLine;
-    
+
     
     [_chartView animateWithXAxisDuration:1.0];
 }
@@ -247,7 +255,7 @@
     }
     else
     {
-        set1 = [[LineChartDataSet alloc] initWithValues:values label:@"DataSet 1"];
+        set1 = [[LineChartDataSet alloc] initWithValues:values label:@"总人数"];
         
         set1.drawIconsEnabled = NO;
         
