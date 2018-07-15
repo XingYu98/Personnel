@@ -31,8 +31,8 @@
     // Do any additional setup after loading the view.
     
     //设置文本框代理
-    _usernameField.delegate = self.usernameField.delegate;
-    _passwordField.delegate = self.passwordField.delegate;
+    _usernameField.delegate = self;
+    _passwordField.delegate = self;
     
     //及时监听文本框输入
     [_usernameField addTarget:self action:@selector(usernameFieldTextChange) forControlEvents:UIControlEventEditingChanged];
@@ -211,6 +211,46 @@
         
     }];
     [self.view addSubview:logoV];
+}
+
+#pragma textField编辑
+// 开始编辑
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    // 开始动画(定义了动画的名字)
+    [UIView beginAnimations:@"viewUp" context:nil];
+    // 设置时长
+    [UIView setAnimationDuration:0.2f];
+    // 设置动画内容
+    self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y - 100, self.view.frame.size.width, self.view.frame.size.height);
+    // 提交动画
+    [UIView commitAnimations];
+}
+// 结束编辑
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    // 开始动画(定义了动画的名字)
+    [UIView beginAnimations:@"viewDown" context:nil];
+    // 设置时长
+    [UIView setAnimationDuration:0.2f];
+    // 设置动画内容
+    self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 100, self.view.frame.size.width, self.view.frame.size.height);
+    // 提交动画
+    [UIView commitAnimations];
+}
+// 点击return的时候
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    // 是textField失去第一响应者(也就是消失掉，这时候会调用textFieldDidEndEditing方法)
+    [self.usernameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+    return YES;
+}
+// 点击屏幕的时候
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // 强制结束所有的编辑(也会调用对应的textFieldDidEndEditing方法)
+    [self.view endEditing:YES];
 }
 
 @end
