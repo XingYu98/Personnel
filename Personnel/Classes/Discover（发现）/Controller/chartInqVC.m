@@ -44,9 +44,20 @@
 }
 
 - (void)search1FieldTextChange {
-    
+    _Search2Field.text = _Search1Field.text;
+    NSLog(@"%@", _Search2Field.text);
+    _Search2Field.textColor = [UIColor whiteColor];
 }
 
+-(void)textFieldDidBeginEditing:(UITextField*)textField
+{
+    // [_SecField resignFirstResponder];
+    if (textField == _Search2Field) {
+        _Search2Field.text = _Search1Field.text;
+        _Search2Field.textColor = [UIColor whiteColor];
+        NSLog(@"%@", _Search2Field.text);
+    }
+}
 - (void)search2FieldTextChange {
     [self.chartView removeFromSuperview];
     [self.chartView1 removeFromSuperview];
@@ -66,10 +77,19 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
+//点击出textField的区域收回键盘
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {//触摸事件中的触摸结束时会调用
+    if (![_Search1Field isExclusiveTouch] || ![_Search2Field isExclusiveTouch]) {//判断点击是否在textfield和键盘以外
+        //将MinField中的“部门/系别”变白
+        //_MinField.textColor = [UIColor whiteColor];
+        [_Search1Field resignFirstResponder];//收起键盘
+        [_Search2Field resignFirstResponder];
+    }
+}
 #pragma 请求数据
 -(void)fakeAsyncWithSearch1: (NSString *)search1 andSearch2: (NSString *)search2 {
     NSArray *NSarray = nil;
-    if ([search1 isEqual: @""] && [search2 isEqual: @""]) {
+    if (![search1 isEqual: @""] && [search2 isEqual: @"党委"]) {
     NSarray = @[
                         @{
                            @"博士":@"23",
@@ -83,7 +103,7 @@
                            @"讲师":@"123",
                            @"助教":@"342"
                            }];
-    }else {
+    }else if (![search1 isEqual: @""] && [search2 isEqual: @"2015"]){
         NSarray = @[
                     @{
                         @"博士":@"45",
@@ -96,6 +116,34 @@
                         @"副教授":@"45",
                         @"讲师":@"73",
                         @"助教":@"45"
+                        }];
+    }else if (![search1 isEqual: @""] && [search2 isEqual: @"山西"]){
+        NSarray = @[
+                    @{
+                        @"博士":@"46",
+                        @"硕士":@"50",
+                        @"本科":@"80",
+                        @"其他":@"102",
+                        },
+                    @{
+                        @"教授":@"98",
+                        @"副教授":@"45",
+                        @"讲师":@"73",
+                        @"助教":@"35"
+                        }];
+    }else if ([search1 isEqual: @""] && [search2 isEqual: @""]){
+        NSarray = @[
+                    @{
+                        @"博士":@"46",
+                        @"硕士":@"50",
+                        @"本科":@"80",
+                        @"其他":@"102",
+                        },
+                    @{
+                        @"教授":@"98",
+                        @"副教授":@"45",
+                        @"讲师":@"73",
+                        @"助教":@"35"
                         }];
     }
     self.dataArray = NSarray;
