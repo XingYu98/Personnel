@@ -7,6 +7,8 @@
 //
 
 #import "chartInqVC.h"
+#import "PersonnelCharts.h" //Charts图表文件
+#import "MBProgressHUD+XMG.h"
 
 @interface chartInqVC ()
 @property (strong, nonatomic) IBOutlet UITextField *Search1Field;
@@ -23,6 +25,7 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -43,12 +46,14 @@
     [self.view addSubview:_chartView1];
 }
 
+#pragma search1 monitor Method
 - (void)search1FieldTextChange {
     _Search2Field.text = _Search1Field.text;
     NSLog(@"%@", _Search2Field.text);
     _Search2Field.textColor = [UIColor whiteColor];
 }
 
+#pragma click search1 trigger Method
 -(void)textFieldDidBeginEditing:(UITextField*)textField
 {
     // [_SecField resignFirstResponder];
@@ -56,17 +61,35 @@
         _Search2Field.text = _Search1Field.text;
         _Search2Field.textColor = [UIColor whiteColor];
         NSLog(@"%@", _Search2Field.text);
+    }else if (textField == _Search1Field) {
+        _Search2Field.text = @"";
     }
 }
+
+
 - (void)search2FieldTextChange {
-    [self.chartView removeFromSuperview];
-    [self.chartView1 removeFromSuperview];
-    [self fakeAsyncWithSearch1:self.Search1Field.text andSearch2:self.Search2Field.text];
-    [self drawPieCharts];
-    [self.view addSubview:_chartView];
-    [self drawPieCharts1];
-    [self.view addSubview:_chartView1];
+    
 }
+
+#pragma searchBtn Action Method
+- (IBAction)searchBtn:(id)sender {
+    if (![self.Search1Field.text  isEqual: @""] && ![self.Search2Field.text  isEqual: @""]) {
+        [self.Search1Field resignFirstResponder];
+        [self.Search2Field resignFirstResponder];
+        [self.chartView removeFromSuperview];
+        [self.chartView1 removeFromSuperview];
+        [self fakeAsyncWithSearch1:self.Search1Field.text andSearch2:self.Search2Field.text];
+        [self drawPieCharts];
+        [self.view addSubview:_chartView];
+        [self drawPieCharts1];
+        [self.view addSubview:_chartView1];
+    }else {
+        [MBProgressHUD showError:@"请完善查询信息"];
+    }
+    
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -144,6 +167,20 @@
                         @"副教授":@"45",
                         @"讲师":@"73",
                         @"助教":@"35"
+                        }];
+    }else {
+        NSarray = @[
+                    @{
+                        @"博士":@"146",
+                        @"硕士":@"250",
+                        @"本科":@"380",
+                        @"其他":@"102",
+                        },
+                    @{
+                        @"教授":@"198",
+                        @"副教授":@"245",
+                        @"讲师":@"373",
+                        @"助教":@"435"
                         }];
     }
     self.dataArray = NSarray;
@@ -345,4 +382,6 @@
     _chartView1.data = data;
     [_chartView1 highlightValues:nil];
 }
+
+
 @end

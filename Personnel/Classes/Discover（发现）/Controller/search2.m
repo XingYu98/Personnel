@@ -11,6 +11,7 @@
 @interface search2() <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (nonatomic, strong) NSArray *Section;
+@property (nonatomic, strong) NSDictionary *dataDict;
 @end
 
 @implementation search2
@@ -35,10 +36,12 @@
 
     pickerView.dataSource = self;
     pickerView.delegate = self;
+    
+    [pickerView setBackgroundColor:[UIColor whiteColor]];
     //自定义文本框键盘
     self.inputView = pickerView;
-    NSLog(@"--------%@", self.text);
-    [self fakeAsyncWithSearch1: @"部门系别"];
+
+    [self fakeAsync];
 }
 
 
@@ -51,16 +54,33 @@
 
 
 #pragma 请求数据
-- (void)fakeAsyncWithSearch1: (NSString *)search1 {
-    NSArray *array = nil;
-    if ([search1  isEqual: @"部门系别"]) {
-        array = @[@"",@"党委",@"党组织部",@"信息系",@"人文系"];
-    }else if ([search1 isEqual: @"进校年份"]) {
-        array = @[@"",@"2017",@"2016",@"2015",@"2014",@"2013"];
-    }else if ([search1 isEqual: @"籍贯"]) {
-        array = @[@"",@"北京",@"河北",@"山西",@"广西",@"海南",@"台湾"];
-    }
-    self.Section = array;
+- (void)fakeAsync {
+    NSDictionary * dict =
+    @{
+        @"status":@"success",
+        @"token":@"tokentokentokenQQQ",
+        @"request":@{
+            @"部门系别":@[
+                       @"",
+                       @"党委",
+                       @"党组织部",
+                       @"信息系"
+                       ],
+            @"籍贯":@[
+                     @"",
+                     @"北京",
+                     @"河北",
+                     @"山西"
+                     ],
+            @"进校时间":@[
+                    @"",
+                    @"2017",
+                    @"2016",
+                    @"2015"
+                    ]
+                }
+        };
+    self.dataDict = dict;
 }
 
 #pragma mark - 数据源方法
@@ -72,6 +92,7 @@
 //第0列   描述搜索类型   行数
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
+    _Section = _dataDict[@"request"][self.text];
     return _Section.count;
 }
 

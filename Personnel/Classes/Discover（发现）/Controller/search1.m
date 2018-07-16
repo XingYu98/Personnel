@@ -36,14 +36,22 @@
     //[self async];
     pickerView.dataSource = self;
     pickerView.delegate = self;
+    
+    [pickerView setBackgroundColor:[UIColor whiteColor]];
+    
     //自定义文本框键盘
     self.inputView = pickerView;
+    
     [self fakeAsync];
 }
 #pragma 请求数据
 -(void)fakeAsync {
     NSArray *array = @[@"",@"部门系别",@"进校时间",@"籍贯"];
     self.Option = array;
+}
+
+-(void)async {
+    
 }
 
 #pragma mark - 数据源方法
