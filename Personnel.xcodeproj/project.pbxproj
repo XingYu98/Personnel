@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52CC96620FDC81C00BF33E0 /* sanjiInforVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CC96520FDC81C00BF33E0 /* sanjiInforVC.m */; };
+		F52CC96D20FDE59400BF33E0 /* informationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CC96C20FDE59400BF33E0 /* informationTVC.m */; };
+		F52CC97020FDE6DA00BF33E0 /* inforTV.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CC96F20FDE6DA00BF33E0 /* inforTV.m */; };
 		F52CE21F20F9D52B0080ED02 /* discoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CE21E20F9D52B0080ED02 /* discoverVC.m */; };
 		F52CE22320F9E8540080ED02 /* sanjiInqVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CE22220F9E8540080ED02 /* sanjiInqVC.m */; };
 		F52CE22620F9FE0A0080ED02 /* chartInqVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CE22520F9FE0A0080ED02 /* chartInqVC.m */; };
@@ -92,6 +95,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F52CC96420FDC81C00BF33E0 /* sanjiInforVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sanjiInforVC.h; sourceTree = "<group>"; };
+		F52CC96520FDC81C00BF33E0 /* sanjiInforVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sanjiInforVC.m; sourceTree = "<group>"; };
+		F52CC96B20FDE59400BF33E0 /* informationTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = informationTVC.h; sourceTree = "<group>"; };
+		F52CC96C20FDE59400BF33E0 /* informationTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = informationTVC.m; sourceTree = "<group>"; };
+		F52CC96E20FDE6DA00BF33E0 /* inforTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inforTV.h; sourceTree = "<group>"; };
+		F52CC96F20FDE6DA00BF33E0 /* inforTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = inforTV.m; sourceTree = "<group>"; };
 		F52CE21D20F9D52B0080ED02 /* discoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = discoverVC.h; sourceTree = "<group>"; };
 		F52CE21E20F9D52B0080ED02 /* discoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = discoverVC.m; sourceTree = "<group>"; };
 		F52CE22120F9E8540080ED02 /* sanjiInqVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sanjiInqVC.h; sourceTree = "<group>"; };
@@ -274,14 +283,20 @@
 			children = (
 				F52CE21D20F9D52B0080ED02 /* discoverVC.h */,
 				F52CE21E20F9D52B0080ED02 /* discoverVC.m */,
-				F52CE22120F9E8540080ED02 /* sanjiInqVC.h */,
-				F52CE22220F9E8540080ED02 /* sanjiInqVC.m */,
 				F52CE22420F9FE0A0080ED02 /* chartInqVC.h */,
 				F52CE22520F9FE0A0080ED02 /* chartInqVC.m */,
 				F53A4B2020FB6CD200D082D2 /* search1.h */,
 				F53A4B2120FB6CD200D082D2 /* search1.m */,
 				F53A4B2420FB720200D082D2 /* search2.h */,
 				F53A4B2520FB720200D082D2 /* search2.m */,
+				F52CE22120F9E8540080ED02 /* sanjiInqVC.h */,
+				F52CE22220F9E8540080ED02 /* sanjiInqVC.m */,
+				F52CC96420FDC81C00BF33E0 /* sanjiInforVC.h */,
+				F52CC96520FDC81C00BF33E0 /* sanjiInforVC.m */,
+				F52CC96B20FDE59400BF33E0 /* informationTVC.h */,
+				F52CC96C20FDE59400BF33E0 /* informationTVC.m */,
+				F52CC96E20FDE6DA00BF33E0 /* inforTV.h */,
+				F52CC96F20FDE6DA00BF33E0 /* inforTV.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -626,13 +641,16 @@
 				F5734C5020EB0BF80042071F /* ViewController.m in Sources */,
 				F52CE22620F9FE0A0080ED02 /* chartInqVC.m in Sources */,
 				F5D5A52520F5E96B00491370 /* personImgNum.m in Sources */,
+				F52CC96D20FDE59400BF33E0 /* informationTVC.m in Sources */,
 				F568E91120F4EADE0018A17C /* MainVC.m in Sources */,
 				F533312B20EC63400029093D /* SettingVC.m in Sources */,
 				F53A4B2220FB6CD200D082D2 /* search1.m in Sources */,
 				F5D5A53220F6331700491370 /* UIColor+ColorChange.m in Sources */,
+				F52CC97020FDE6DA00BF33E0 /* inforTV.m in Sources */,
 				F53A4B2620FB720200D082D2 /* search2.m in Sources */,
 				F5734C5B20EB0BF80042071F /* main.m in Sources */,
 				F568E90420F49E170018A17C /* MBProgressHUD+XMG.m in Sources */,
+				F52CC96620FDC81C00BF33E0 /* sanjiInforVC.m in Sources */,
 				F52CE22320F9E8540080ED02 /* sanjiInqVC.m in Sources */,
 				F568E90320F49E170018A17C /* MBProgressHUD.m in Sources */,
 				F5734C9420EB84080042071F /* LoginVC.m in Sources */,

@@ -7,8 +7,13 @@
 //
 
 #import "sanjiInqVC.h"
+#import "MBProgressHUD+XMG.h"
+#import "sanjiInforVC.h"
 
 @interface sanjiInqVC ()
+@property (strong, nonatomic) IBOutlet UITextField *firstField;
+@property (strong, nonatomic) IBOutlet UITextField *secondField;
+@property (strong, nonatomic) IBOutlet UITextField *thirdField;
 @property (strong, nonatomic) IBOutlet UILabel *firstSearch;
 @property (strong, nonatomic) IBOutlet UILabel *secondSearch;
 @property (strong, nonatomic) IBOutlet UILabel *thirdSearch;
@@ -24,9 +29,11 @@
 
 #pragma WillAppear设置
 -(void)loadWillView {
+    //设置导航栏标题
     UILabel * titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 62, 20)] ;
     titleLabel.text = self.VTitle;
     self.navigationItem.titleView = titleLabel ;
+    
     self.firstSearch.text = self.firstSearchLab;
     self.secondSearch.text = self.secondSearchLab;
     self.thirdSearch.text = self.thirdSearchLab;
@@ -46,14 +53,25 @@
 -(void)viewWillDisappear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma 点击InquireBtn的行为
+- (IBAction)inquireBtn:(id)sender {
+    if (![_firstField.text isEqual:@""]) {
+    [self performSegueWithIdentifier:@"sanjiContact" sender:nil];
+    }else {
+        [MBProgressHUD showError:@"请输入第一项信息"];
+    }
 }
-*/
+
+#pragma segue传值代码
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    FaceVC *faceVc = segue.destinationViewController;
+//    faceVc.username = self.usernameField.text;
+//    faceVc.token = self.token;
+    sanjiInforVC *sanjiVc = segue.destinationViewController;
+    sanjiVc.firstInfor = self.firstField.text;
+    sanjiVc.secondInfor = self.secondField.text;
+    sanjiVc.thirdInfor = self.thirdField.text;
+}
 
 @end

@@ -17,11 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     //设置导航条显示，animate：YES（有动画效果）：NO（没有动画效果，直接显示）
 //    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(void)viewWillDisappear:(BOOL)animated {
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 //设置导航条外观
 -(void)setUpNavigation {
     [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
